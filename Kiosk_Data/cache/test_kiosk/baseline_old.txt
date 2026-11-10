@@ -1,0 +1,29 @@
+start                              | Welcome. The camera stays off until you agree.
+                                     list: Alice            Expected / Bob              Expected / Dana             Expected / Eve              Expected
+empty code                         | That code is not on today's list. Please try again.
+                                     list: Alice            Expected / Bob              Expected / Dana             Expected / Eve              Expected
+wrong code 9999                    | That code is not on today's list. Please try again.
+                                     list: Alice            Expected / Bob              Expected / Dana             Expected / Eve              Expected
+code 1001 with spaces, no consent  | Welcome, Alice. The receptionist has been told.
+                                     list: Alice            Checked in by code (time) / Bob              Expected / Dana             Expected / Eve              Expected
+code 1001 again                    | Alice is already checked in.
+                                     list: Alice            Checked in by code (time) / Bob              Expected / Dana             Expected / Eve              Expected
+decline                            | Please type your booking code below. The camera stays off.
+                                     list: Alice            Checked in by code (time) / Bob              Expected / Dana             Expected / Eve              Expected
+code 1002 after decline            | Welcome, Bob. The receptionist has been told.
+                                     list: Alice            Checked in by code (time) / Bob              Checked in by code (time) / Dana             Expected / Eve              Expected
+agree, real person on the list     | Welcome, Dana. The receptionist has been told.
+                                     list: Alice            Checked in by code (time) / Bob              Checked in by code (time) / Dana             Checked in by face (time) / Eve              Expected
+agree again, same person           | Dana is already checked in.
+                                     list: Alice            Checked in by code (time) / Bob              Checked in by code (time) / Dana             Checked in by face (time) / Eve              Expected
+agree, printed photo               | That does not look like a live face. Please use the booking code.
+                                     list: Alice            Checked in by code (time) / Bob              Checked in by code (time) / Dana             Checked in by face (time) / Eve              Expected
+agree, phone replay                | No face found. Please stand in front of the camera.
+                                     list: Alice            Checked in by code (time) / Bob              Checked in by code (time) / Dana             Checked in by face (time) / Eve              Expected
+agree, real person not on list     | You are not on today's list. Please use the booking code.
+                                     list: Alice            Checked in by code (time) / Bob              Checked in by code (time) / Dana             Checked in by face (time) / Eve              Expected
+agree, empty scene                 | No face found. Please stand in front of the camera.
+                                     list: Alice            Checked in by code (time) / Bob              Checked in by code (time) / Dana             Checked in by face (time) / Eve              Expected
+agree, camera missing              | Something went wrong. Please try again or use the booking code.
+                                     list: Alice            Checked in by code (time) / Bob              Checked in by code (time) / Dana             Checked in by face (time) / Eve              Expected
+last warning: [Octave language extension used: -= used as operator near line 295 of file /usr/share/octave/11.1.0/m/statistics/cov.m] [Octave:language-extension]

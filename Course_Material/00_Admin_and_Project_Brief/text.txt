@@ -1,0 +1,88 @@
+Assignment Instructions: Phase 1 Project Summary
+
+Course: CMAI 480 – Computer Vision
+Deliverable: Phase 1 Non-Graded Project Summary (1 Page)
+Due: Week 3 - Sunday 6/9/2026
+Overview
+As part of Phase 1 of your course project, each team is required to submit a one-page project summary defining the scope, goals, and proposed methodology for your selected application. Your project must be designed and implemented within the MATLAB environment (using toolboxes such as Computer Vision, Image Processing, and Deep Learning Toolboxes).
+
+Please ensure your team as a group completes and submits a single one-page summary containing the following sections:
+
+Required Sections
+	•	Project Title and Team Members
+	•	Team Members: List the names and student IDs of all team members (5 students per group).
+	•	Problem Statement
+	•	Briefly describe the real-world issue, challenge, or application domain (e.g., Smart City/Transport, Healthcare/Biometrics, Robotics, or Interactive AI Systems) your project addresses.
+	•	Explain why solving this problem using Computer Vision techniques is necessary or beneficial and how it is different from existing solutions.
+	•	Project Objectives
+	•	Outline 4–5 specific, measurable goals you aim to achieve by the end of the semester.
+	•	Example objectives: Image acquisition/sensor integration, specific feature detection/segmentation accuracy, implementation of a custom algorithm from scratch, build a MATLAB App Designer GUI, or real-time live video testing.
+	•	Proposed Methodology & Pipeline
+	•	Explain your planned technical approach to tackle the problem. Regardless of your specific topic, your pipeline should outline how you plan to handle the following core stages:
+	•	Image/Data Acquisition: Describe how you will acquire images or video streams (e.g., live webcam/camera feed directly into MATLAB, or collecting/downloading a baseline image dataset from a public repository).
+	•	Project Dataset Status & Readiness: Provide a concise statement specifying how your team acquired or plans to collect/download the baseline dataset (e.g., self-captured via camera or sourced from a public repository), along with its current readiness level (e.g., fully collected, preprocessed, labeled, or undergoing collection).
+	•	Preprocessing: Detail the image processing techniques you plan to apply for image enhancement, noise reduction, or contrast adjustment (e.g., Gabor filtering, histogram equalization, morphological operations).
+	•	Detection & Segmentation: Explain how you will locate and isolate the Region of Interest (ROI) or object within the frame (e.g., active contours, background subtraction, color/threshold segmentation, or U-Net).
+	•	From-Scratch Algorithmic Step: Identify at least one core computer vision algorithm that your team will write from first principles/mathematical equations in MATLAB without relying on high-level library functions (e.g., Harris corner detection, RANSAC alignment, template matching, background subtraction, or custom filtering or others).
+	•	Feature Extraction & Learning/Classification: Specify the features you will extract (e.g., SIFT, SURF, HOG, etc.) and/or the machine learning / deep learning model used for recognition/classification (e.g., CNN, template matching, or pretrained MATLAB models).
+	•	Output & Visualization: Describe how the final classification, bounding box, trajectory, or decision support visual will be displayed to the end-user (e.g., live overlay on video feed, or MATLAB App Designer interface).
+
+Important Policy Reminder
+	•	Environment: All primary coding, algorithm implementation, and UI design must be executed in MATLAB.
+	•	Academic Integrity & Generative AI Policy: Generative AI or automated code-generation tools (e.g., ChatGPT, Copilot) are strictly prohibited for writing, debugging, or documenting project code. All code must be original and fully understood by every team member, as individual code modifications and live defenses will take place during final evaluations in Weeks 14–15 in shaAllah.
+ After seeing the one page summary this is the comments 
+Dear Team,
+This is an excellent, well-scoped, and smart proposal. I really like your forward-thinking ideas of adding a privacy consent flow, an equal second check-in path, and a clear plan to test how your system performs as the daily list grows from 5 to 50 people. To ensure your project stands out as a distinguished computer vision system rather than a basic online tutorial clone, you need to step up your edge-case handling and liveness testing: I suggest adding an illumination normalization layer (like Homomorphic Filtering) to make your custom PCA work well under changing office lights, and creating a dual-feature liveness classifier that combines a texture check (like Local Binary Patterns to detect phone/laptop screen pixels) with a physical cue like eye-blink detection. Regarding your question, yes, you are fully allowed and encouraged to use a ready-made face recognition model, as long as it strictly serves as a competitor to your from-scratch PCA code.
+I hope these suggestions help you in making your project a remarkable one in shaAllah.
+Best Wishes,
+Dr. Khalil
+
+Imp
+Dear Respected Students,
+
+As we approach the final weeks of the semester, this announcement serves as a comprehensive reminder regarding your Course Project submission requirements, final defense schedule, and important software updates.
+The current deadline for your project submissions is Tuesday, November 17, 2026.
+
+1. Mandatory Project Deliverables (Deadline: Nov 17, 2026)
+Please ensure your group submits the following items through the active link under the Course Project module on Blackboard:
+	•	Written Report: A detailed PDF report following the IEEE template outlining your project's objectives, literature review, methodology, results, and conclusions. (Please review the grading rubrics and template available under "Project Important Information" on Blackboard).
+	•	Presentation Slides: PowerPoint presentation file.
+	•	Source Code: Thoroughly tested, functional, and error-free code.
+	•	
+2. Important Update Regarding MATLAB
+Please note that the College of Engineering has announced that MATLAB R2023a will be the officially supported version provided by the University through ITS. ITS is currently working on implementing this version across the college laboratories and infrastructure. Be sure to log out after completing your sessions to help manage concurrent license availability.
+
+3. Recommended Presentation Structure
+For your final presentations during Week 14, I highly recommend organizing your slides using the following structure:
+	•	Slide 1: Project Title, Group Names, and Student IDs.
+	•	Slide 2: Contribution of Group Members (Explicitly detailing who did what).
+	•	Slide 3: Problem Definition (What is the problem and why is it important?).
+	•	Slide 4: Literature Gap (How existing schemes fall short or current shortcomings).
+	•	Slide 5: Proposed Solution (How your method resolves existing limitations).
+	•	Slide 6 & 7: Proposed Methodology (Detailed explanation, preferably using diagrams/flowcharts).
+	•	Slide 8: Results & Demos (Visual results, resultant images with predicted labels/bounding boxes, segmentation overlays, and performance tables).
+	•	Slide 9: Conclusion & Future Work.
+	•	Slide 10: Live Demo and Q&A.
+
+4. Final Project Discussion Schedule (Week 14)
+Project discussions and presentations will take place on Tuesday and Thursday, November 24 and 26, 2026.
+	•	Timing Structure: 13 minutes total per group (9 minutes for Presentation & Demo + 3–4 minutes for Q&A).
+	•	Order: Groups will present in chronological order based on your Blackboard Group ID. See the below timing slots:
+
+	•	Tuesday, November 24:
+	•	Group 1: 2:00 PM – 2:13 PM
+	•	Group 2: 2:13 PM – 2:26 PM
+	•	Group 3: 2:26 PM – 2:39 PM
+	•	Group 4: 2:39 PM – 2:52 PM
+
+	•	Thursday, November 26:
+	•	Group 5: 2:00 PM – 2:13 PM
+	•	Group 6: 2:13 PM – 2:26 PM
+	•	Group 7: 2:26 PM – 2:39 PM
+	•	Group 8: 2:39 PM – 2:52 PM
+
+Please ensure everything is prepared on time. Good luck with your final implementations and reports!
+
+Best regards,
+
+Dr. Khalil

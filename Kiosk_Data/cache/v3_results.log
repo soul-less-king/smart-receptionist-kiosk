@@ -1,0 +1,44 @@
+detection =
+
+   0.9967   0.8154
+
+listAccuracy =
+
+   0.7810   0.9970
+   0.6415   0.9965
+   0.5653   0.9972
+   0.4968   0.9972
+   0.4612   0.9963
+   0.4576   0.9951
+
+listSpread =
+
+   9.4807e-02   9.7872e-03
+   6.2683e-02   8.1273e-03
+   3.9851e-02   4.9934e-03
+   4.3089e-02   2.9170e-03
+   2.8348e-02   3.2947e-03
+   1.7126e-02   2.4688e-03
+
+glasses =
+
+   0.5269   0.4332   0.9912   0.9965
+
+strangersEigenfaces =
+
+   0.787611   0.356000   0.490358   0.053333
+
+strangersVgg =
+
+   0.964427   0.976000   0.970179   0.024000
+
+lighting =
+
+   0.8816   0.2394
+   0.9836   0.7793
+
+fatal: caught signal Terminated -- stopping myself...
+attempting to save variables to 'octave-workspace'...
+save to 'octave-workspace' complete
+Command exited with non-zero status 1
+full run: 732.02 s, 765964 KB max
