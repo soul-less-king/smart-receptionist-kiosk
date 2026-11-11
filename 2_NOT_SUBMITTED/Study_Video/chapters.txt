@@ -1,0 +1,20 @@
+Consent-Based Smart Receptionist Kiosk: the whole project explained (58:07)
+
+00:00  Welcome
+00:58  1 · What the course asked for
+03:11  2 · The problem and our idea
+05:09  3 · The big picture
+08:38  4 · What we submit, and how to run it
+09:58  5 · Part 1 · kiosk.m, the screen
+21:38  6 · Part 2 · findFace.m, finding the face
+26:13  7 · Part 3 · recognizeFace.m, light and Eigenfaces
+31:58  8 · Part 4 · checkLiveness.m, is the face alive?
+34:40  9 · Part 5 · experiments.m, every test in the report
+46:21  10 · The datasets
+47:08  11 · The report
+50:47  12 · The slides
+51:50  13 · What we used from the class
+52:37  14 · The code rubric, box by box
+53:45  15 · What the doctor may ask
+55:24  16 · Who owns what
+57:32  17 · Before we submit
