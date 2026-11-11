@@ -59,13 +59,13 @@ const HEX = THEME.colors;
   s = add('CONTENT', 'Opening', 'Who did what: one part per person', 'Each of us owns one part of the code and can explain and change it. All of us can explain the whole system.');
   const rows = [
     [{ text: 'Part', options: { bold: true, color: C.background1, fill: { color: C.accent1 } } }, { text: 'What it does', options: { bold: true, color: C.background1, fill: { color: C.accent1 } } }, { text: 'File', options: { bold: true, color: C.background1, fill: { color: C.accent1 } } }, { text: 'Owner', options: { bold: true, color: C.background1, fill: { color: C.accent1 } } }],
-    ['1', 'Consent screen, booking code, receptionist list', 'kiosk.m', '[assign name]'],
-    ['2', 'Finds the face with a gradient-histogram template, cuts it out', 'findFace.m', '[assign name]'],
-    ['3', 'Homomorphic light correction, Eigenfaces from the equations', 'recognizeFace.m', '[assign name]'],
-    ['4', 'Liveness: LBP texture check and blink check', 'checkLiveness.m', '[assign name]'],
-    ['5', 'All experiments, the ready-made competitor, report results', 'experiments.m', '[assign name]'],
+    ['1', 'Consent screen, booking code, receptionist list', 'kiosk.m', 'Hadi Sleiman (leader)'],
+    ['2', 'Finds the face with a gradient-histogram template, cuts it out', 'findFace.m', 'Islam Alshiss'],
+    ['3', 'Homomorphic light correction, Eigenfaces from the equations', 'recognizeFace.m', 'Hashir Khan'],
+    ['4', 'Liveness: LBP texture check and blink check', 'checkLiveness.m', 'Fahad Al-Thani'],
+    ['5', 'All experiments, the ready-made competitor, report results', 'experiments.m', 'Abdulrahman Alsheikh'],
   ];
-  s.addTable(rows, { x: 0.6, y: 1.55, w: 12.1, colW: [0.8, 7.0, 2.3, 2.0], fontSize: 16, color: C.text1, rowH: 0.72, border: { type: 'solid', pt: 1, color: C.background2 }, valign: 'middle', fontFace: '+mn-lt', objectName: 'Contribution table' });
+  s.addTable(rows, { x: 0.6, y: 1.55, w: 12.1, colW: [0.8, 6.3, 2.3, 2.7], fontSize: 16, color: C.text1, rowH: 0.72, border: { type: 'solid', pt: 1, color: C.background2 }, valign: 'middle', fontFace: '+mn-lt', objectName: 'Contribution table' });
 
   section('Problem');
   s = add('CONTENT', 'Problem', 'The problem: checking visitors in by hand', 'Reception staff check every name by hand. It is slow when people arrive together, repetitive, and visitors say their names aloud in a full waiting room.');

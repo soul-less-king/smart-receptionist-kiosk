@@ -1,4 +1,5 @@
-% recognizeFace.m - Part 3 of the kiosk: corrects the light on a face and recognizes it with our own Eigenfaces. CMAI 480 Computer Vision, Fall 2026. Team: Alsheikh, Al-Thani, Sleiman, Alshiss, Khan.
+% recognizeFace.m - Part 3 of the kiosk: corrects the light on a face and recognizes it with our own Eigenfaces.
+% Programmers: Alsheikh, Al-Thani, Sleiman, Alshiss, Khan. CMAI 480 Computer Vision, Fall 2026.
 pkg load image;
 
 function faceColumn = homomorphicFilter(face)  % picture = light x detail: take the log, shrink the slowly changing light and boost the detail (Chapter 3; doctor's comment)
@@ -17,10 +18,6 @@ function [model, weights] = trainEigenfaces(faces)  % Eigenfaces from the equati
     weights = model.eigenfaces' * differences;                        % w = U'(face - average face) for the training faces
 end
 
-function weights = projectFaces(faces, model)  % the eigenface weights of any face: w = U'(face - average face)
-    weights = model.eigenfaces' * (faces - model.averageFace);
-end
-
 function [closest, accepted] = matchFace(weights, photoWeights, photoOwners)  % the nearest enrolled photo, accepted only if clearly nearer than the nearest other person (ratio test, Assignment 3)
     distances = sqrt(sum((photoWeights - weights) .^ 2));             % Euclidean distance to every enrolled photo
     [nearest, closest] = min(distances);
@@ -29,7 +26,7 @@ end
 
 function today = loadTodaysList(faceTemplate)  % reads the photos in today/Name_Code/*.jpg, finds each face and trains Eigenfaces on today's visitors only
     folders = dir('today/*_*');
-    today.names = regexprep({folders.name}, '_.*', '');               % the folder name before the underscore
+    today.names = regexprep({folders.name}, '_[^_]*$', '');           % the folder name before the last underscore
     today.codes = regexprep({folders.name}, '.*_', '');               % the folder name after the last underscore
     today.status = repmat({'Expected'}, size(today.names));
     today.photoOwners = [];

@@ -1,4 +1,5 @@
-% findFace.m - Part 2 of the kiosk: finds the face in a picture and cuts it out. CMAI 480 Computer Vision, Fall 2026. Team: Alsheikh, Al-Thani, Sleiman, Alshiss, Khan.
+% findFace.m - Part 2 of the kiosk: finds the face in a picture and cuts it out.
+% Programmers: Alsheikh, Al-Thani, Sleiman, Alshiss, Khan. CMAI 480 Computer Vision, Fall 2026.
 pkg load image;
 
 function histograms = gradientHistograms(gray)  % for every 8x8 cell of pixels, a histogram of edge directions in 8 bins (Assignment 2; SIFT, Feature Extraction Part 2)

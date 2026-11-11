@@ -1,4 +1,5 @@
-% checkLiveness.m - Part 4 of the kiosk: is this a live person? Two checks must pass: skin texture and an eye blink. CMAI 480 Computer Vision, Fall 2026. Team: Alsheikh, Al-Thani, Sleiman, Alshiss, Khan.
+% checkLiveness.m - Part 4 of the kiosk: is this a live person? Two checks must pass: skin texture and an eye blink.
+% Programmers: Alsheikh, Al-Thani, Sleiman, Alshiss, Khan. CMAI 480 Computer Vision, Fall 2026.
 pkg load image;
 
 function histogram = lbpHistogram(faces)  % Local Binary Patterns: each pixel gets an 8-bit code by comparing it with its 8 neighbors (N8, Chapter 3)
